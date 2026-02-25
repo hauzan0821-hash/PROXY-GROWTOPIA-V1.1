@@ -20,7 +20,7 @@ void printUsage(const char* exe) {
         << "  --keyauth-url <url>        default: https://keyauth.win/api/seller/\n"
         << "  --keyauth-owner <id>       default: KRZWWBf8dt\n"
         << "  --keyauth-secret <secret>  default: provided secret\n"
-        << "  --keyauth-app <name>       default: GTProxy\n"
+        << "  --keyauth-app <name>       default: Proxy Kw\n"
         << "  --no-keyauth               disable keyauth gate\n"
         << "  --quiet                    disable debug logs\n";
 }

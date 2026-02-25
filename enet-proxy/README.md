@@ -17,6 +17,8 @@ Ini versi yang sudah disiapkan supaya kamu tinggal build jadi aplikasi, lalu uba
 ## KeyAuth default (sesuai data yang kamu kasih)
 - owner id: `KRZWWBf8dt`
 - secret id: `8c17983afece3659d7c8d9b6bf0b3e778a75df88a74e6173cc2819dcbd5e5cef`
+- app name: `Proxy Kw`
+- role plan (keterangan): `testerplan`
 
 ## Struktur penting
 - `include/keyauth_client.hpp` / `src/keyauth_client.cpp` -> request verifikasi username KeyAuth
@@ -33,6 +35,8 @@ Ini versi yang sudah disiapkan supaya kamu tinggal build jadi aplikasi, lalu uba
 - optional: Lua dev package (untuk script engine)
 
 ## Build
+> Visual Studio: buka `proxy1.sln` dari root repository untuk build langsung jadi aplikasi `proxy1.exe`.
+
 Linux:
 ```bash
 cd enet-proxy

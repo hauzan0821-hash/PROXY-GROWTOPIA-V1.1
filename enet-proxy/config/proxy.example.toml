@@ -12,4 +12,6 @@ keyauth_enabled = true
 keyauth_url = "https://keyauth.win/api/seller/"
 keyauth_owner_id = "KRZWWBf8dt"
 keyauth_secret_id = "8c17983afece3659d7c8d9b6bf0b3e778a75df88a74e6173cc2819dcbd5e5cef"
-keyauth_app = "GTProxy"
+keyauth_app = "Proxy Kw"
+
+# keyauth_role = "testerplan"
