@@ -17,7 +17,7 @@ void printUsage(const char* exe) {
         << "  --max-clients <n>          default: 256\n"
         << "  --lua-script <file>        default: ../proxy.lua\n"
         << "  --no-lua                   disable Lua script engine\n"
-        << "  --keyauth-url <url>        default: https://keyauth.win/api/seller/\n"
+        << "  --keyauth-url <url>        default: https://keyauth.win/api/1.2/\n"
         << "  --keyauth-owner <id>       default: KRZWWBf8dt\n"
         << "  --keyauth-secret <secret>  default: provided secret\n"
         << "  --keyauth-app <name>       default: Proxy Kw\n"
