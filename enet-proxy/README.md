@@ -36,6 +36,17 @@ Ini versi yang sudah disiapkan supaya kamu tinggal build jadi aplikasi, lalu uba
 
 ## Build
 > Visual Studio: buka `proxy1.sln` dari root repository untuk build langsung jadi aplikasi `proxy1.exe`.
+> Catatan: project Visual Studio default memakai `script_engine_stub.cpp` (Lua nonaktif) supaya tidak error `lua.hpp` kalau Lua belum terpasang.
+
+### Prasyarat Visual Studio (wajib agar error header hilang)
+- Install dependency C/C++: **ENet** dan **libcurl** (paling gampang via vcpkg).
+- Contoh (PowerShell):
+```powershell
+git clone https://github.com/microsoft/vcpkg C:\vcpkg
+C:\vcpkg\bootstrap-vcpkg.bat
+C:\vcpkg\vcpkg install enet:x64-windows curl:x64-windows
+```
+- Setelah itu restart Visual Studio dan build ulang `proxy1.sln`.
 
 Linux:
 ```bash
