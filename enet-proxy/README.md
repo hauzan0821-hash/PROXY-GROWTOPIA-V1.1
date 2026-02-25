@@ -17,6 +17,8 @@ Ini versi yang sudah disiapkan supaya kamu tinggal build jadi aplikasi, lalu uba
 ## KeyAuth default (sesuai data yang kamu kasih)
 - owner id: `KRZWWBf8dt`
 - secret id: `8c17983afece3659d7c8d9b6bf0b3e778a75df88a74e6173cc2819dcbd5e5cef`
+- app name: `Proxy Kw`
+- role plan (keterangan): `testerplan`
 
 ## Struktur penting
 - `include/keyauth_client.hpp` / `src/keyauth_client.cpp` -> request verifikasi username KeyAuth
@@ -33,6 +35,19 @@ Ini versi yang sudah disiapkan supaya kamu tinggal build jadi aplikasi, lalu uba
 - optional: Lua dev package (untuk script engine)
 
 ## Build
+> Visual Studio: buka `proxy1.sln` dari root repository untuk build langsung jadi aplikasi `proxy1.exe`.
+> Catatan: project Visual Studio default memakai `script_engine_stub.cpp` (Lua nonaktif) supaya tidak error `lua.hpp` kalau Lua belum terpasang.
+
+### Prasyarat Visual Studio (wajib agar error header hilang)
+- Install dependency C/C++: **ENet** dan **libcurl** (paling gampang via vcpkg).
+- Contoh (PowerShell):
+```powershell
+git clone https://github.com/microsoft/vcpkg C:\vcpkg
+C:\vcpkg\bootstrap-vcpkg.bat
+C:\vcpkg\vcpkg install enet:x64-windows curl:x64-windows
+```
+- Setelah itu restart Visual Studio dan build ulang `proxy1.sln`.
+
 Linux:
 ```bash
 cd enet-proxy
